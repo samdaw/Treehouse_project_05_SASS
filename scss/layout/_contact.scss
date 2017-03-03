@@ -1,0 +1,21 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 450px;
+  margin: auto;
+  background-color: #fff;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contact-social-icon {
+  padding: 40px 5px 5px 5px;
+  width: 45px;
+  opacity: .6;
+  &:hover {
+    opacity: .8;
+  }
+}

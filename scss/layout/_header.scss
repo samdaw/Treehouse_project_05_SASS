@@ -1,0 +1,51 @@
+.banner {
+  padding: 80px 10px 40px 10px;
+  font-size: 1.05em;
+  color: $intro;
+  @include breakpoint(md) {
+    flex-direction: row-reverse;
+    text-align: left;
+    font-size: 21px;
+  }
+  @include breakpoint(lg) {
+    padding: 0px 10px 40px 10px;
+    height: 80vh;
+  }
+}
+
+.profile-picture {
+  width: 70%;
+  max-width: 367px;
+  padding-bottom: 40px;
+  @extend %center;
+  @include breakpoint(md) {
+    padding-bottom: 10px;
+    margin-left: 50px;
+  }
+  @include breakpoint(lg) {
+    margin-left: 120px;
+    margin-right: 9px;
+  }
+  @include breakpoint(xl) {
+    margin-left: 180px;
+  }
+  img {
+    @extend %radius;
+  }
+}
+
+.profile-copy {
+  width: 80%;
+  max-width: 457px;
+  font-size: .9em;
+  color: grey;
+  @extend %center;
+  padding-bottom: 20px;
+  @include breakpoint(md) {
+    max-width: none;
+    margin-left: 5px;
+  }
+  @include breakpoint(xl) {
+    font-size: 1.1em;
+  }
+}

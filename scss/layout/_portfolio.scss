@@ -1,0 +1,37 @@
+.portfolio {
+  background-color: $white;
+  @extend %radius;
+    .col {
+      padding: 22px 1em 1em;
+      @include breakpoint(md) {
+        flex: 1 50%;
+      }
+      // @include breakpoint(xl) {
+      //   flex: 1 33%;
+      // }
+    p {
+      max-width: 400px;
+      @extend %center;
+      margin-bottom: 20px
+    }
+  }
+}
+
+.row {
+  padding-bottom: 40px;
+  @extend %center;
+  @include breakpoint(md) {
+    flex-wrap: wrap;
+  }
+}
+
+.skills {
+  background-color: initial;
+  .col {
+    @include breakpoint(sm) {
+      flex: 1 25%;
+    }
+  }
+}
+
+

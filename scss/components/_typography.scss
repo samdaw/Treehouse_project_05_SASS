@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: $text;
+  background-color: $bg;
+}
+
+p {
+  @include text(13px, 1.8, 300);
+}
+
+h1 {
+  @include text(1.7em, 1.5, 400);
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+h2 {
+  @include text(.9em, null, 500);
+  padding-top: 60px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin-top: 0;
+}
+
+h3 {
+  @include text(14px, null, 300);
+  padding-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  margin-bottom: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+}
